@@ -47,35 +47,36 @@ CLI 运行界面
 以下目录结构完全按照你当前本地的 tree /F 输出生成。
 
 .
-│ .env
-│ .env.example
-│ .gitignore
-│ requirements.txt
-│ test_rag_standalone.py
+├── .env
+├── .env.example
+├── .gitignore
+├── requirements.txt
+├── test_rag_standalone.py
 │
-├─agent
-│ agent_runner.py
-│ llm_client.py
-│ tools_math_weather.py
-│ tools_otto.py
-│ tools_rag_financial.py
-│ init.py
+├── agent/
+│   ├── agent_runner.py
+│   ├── llm_client.py
+│   ├── tools_math_weather.py
+│   ├── tools_otto.py
+│   ├── tools_rag_financial.py
+│   └── __init__.py
 │
-├─app
-│ cli_app.py
+├── app/
+│   └── cli_app.py
 │
-├─db
-│ mysql_client.py
-│ init.py
+├── db/
+│   ├── mysql_client.py
+│   └── __init__.py
 │
-├─rag
-│ financial_rag_core.py
-│ init.py
+├── rag/
+│   ├── financial_rag_core.py
+│   └── __init__.py
 │
-└─storage
-bm25.pkl
-index.faiss
-meta.json
+└── storage/
+    ├── bm25.pkl
+    ├── index.faiss
+    └── meta.json
+
 
 三、运行方式
 
@@ -117,4 +118,5 @@ Agent：（返回模拟天气）
 Agent：返回带 [报告:页码] 的金融分析
 
 你：帮我查 Otto 数据库里 session_id 为 12899779 的数据
+
 Agent：从 MySQL 查询并解释用户行为
