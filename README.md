@@ -44,8 +44,8 @@ CLI 运行界面
 
 二、项目目录结构
 
-以下目录结构完全按照本地 tree /F 输出生成：
 
+```markdown
 ```text
 .
 │  .env.example
@@ -77,7 +77,6 @@ CLI 运行界面
        bm25.pkl
        index.faiss
        meta.json
-
 
 三、运行方式
 
@@ -121,4 +120,5 @@ Agent：返回带 [报告:页码] 的金融分析
 你：帮我查 Otto 数据库里 session_id 为 12899779 的数据
 
 Agent：从 MySQL 查询并解释用户行为
+
 
