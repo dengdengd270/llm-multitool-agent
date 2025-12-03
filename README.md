@@ -9,7 +9,7 @@
 - 自主选择工具 (`calculator`, `weather_mock`, `otto_get_session`, `financial_report_rag`)
 - 支持 ReAct 风格规划与 Tool Calling
 
-### 金融报告 RAG 系统（已集成）
+### 金融报告 RAG 系统
 - 使用 FAISS、BM25、bge-small-zh-v1.5 向量模型实现混合检索
 - 自动汇总报告内容
 - 输出带来源页码的引用
@@ -19,7 +19,7 @@
 - **工具函数**：`otto_get_session`
 - 查询 Otto 电商行为数据（约 167 万条）
 - 跨工具的数据流回传
-- **可扩展的 SQL NL 工具（占位）**：
+- **可扩展的 SQL NL 工具**：
   - 提供 SQL Agent 的雏形结构
   - 未来可扩展为通用 SELECT NL2SQL Agents
 
@@ -107,3 +107,4 @@ python app/cli_app.py
 
 **用户**：`帮我查 Otto 数据库里 session_id 为 12899779 的数据`
 > **Agent**：从 MySQL 查询并解释用户行为
+
